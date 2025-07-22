@@ -1,0 +1,17 @@
+Tasks to do:
+Implement CAX:
+- De-toroidize simulation
+- Create SICA
+- Note: The output is already compatible with other programs with a simple reshape to state.shape[0], -1) and converting other program np to jnp
+- If the SICA is able to be created, de-toroidization is trivial by adding a border to the original 32x32 shape and applying a no-birth-no-survival CA on the border
+
+
+State of Code Editing for Readability
+neighbors: finished
+ruleset: finished; more safeguards added in fromArray method
+transition: finished; no revisions needed; comments added to add clarity
+test_transition: finished, 2-state CA, 3-state CA, and SICA pass
+
+Notes: rules array has dim width * length * Dict(tuple(neighbors and init), final)
+Example syntax: (0(0({1,7,1},1)))
+Rules is equivalent to a 4D NDArray: [[[[1,7,1,1](indiv rule layer)](ruleset layer)](height layer)](width layer)]

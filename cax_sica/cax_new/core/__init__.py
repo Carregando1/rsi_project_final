@@ -1,5 +1,5 @@
 """Core Module."""
 
-from .ca import CA
+from .catime import CA
 
 __all__ = ["CA"]

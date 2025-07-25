@@ -1,6 +1,4 @@
-"""Utilities for rendering and emoji."""
-
-from .emoji import get_emoji
+"""Utilities for rendering."""
 from .render import (
 	clip_and_uint8,
 	hsv_to_rgb,

@@ -1,4 +1,4 @@
-"""Cellular Automata module."""
+"""Cellular Automata module for Time CAs."""
 
 from collections.abc import Callable
 from functools import partial

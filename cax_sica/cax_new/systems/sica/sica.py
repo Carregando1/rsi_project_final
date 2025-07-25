@@ -5,7 +5,7 @@ import jax.numpy as jnp
 from flax import nnx
 from jax import Array
 
-from cax_sica.cax_new.core.ca import CA, metrics_fn
+from cax_sica.cax_new.core.catime import CA, metrics_fn
 from cax_sica.cax_new.types import State
 from cax_sica.cax_new.utils import clip_and_uint8
 

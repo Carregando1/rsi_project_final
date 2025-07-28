@@ -1,1 +1,0 @@
-from lamm_automata.objectives.surfacevol import surface_to_vol
